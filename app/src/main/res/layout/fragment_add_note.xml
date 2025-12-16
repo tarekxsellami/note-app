@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.addnote.AddNoteFragment">
+
+
+    <EditText
+        android:id="@+id/note_title"
+        style="@style/CustomEditTextStyleBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/raleway_bold"
+        android:hint="@string/note_title"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tags" />
+
+    <EditText
+        android:id="@+id/image_url"
+        style="@style/CustomEditTextStyleMedium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/dark_grey_background"
+        android:hint="@string/add_image_url"
+        android:maxLines="2"
+        android:padding="10dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/add_note"
+        app:layout_constraintEnd_toEndOf="@+id/note_title"
+        app:layout_constraintStart_toStartOf="@+id/note_title" />
+
+    <EditText
+        android:id="@+id/note_description"
+        style="@style/CustomEditTextStyleMedium"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="top"
+        android:hint="@string/note_description"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/image_url"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note_title" />
+
+    <TextView
+        android:id="@+id/add_note"
+        style="@style/CustomSmallButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/add_button_background"
+        android:text="@string/add_note"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/add_tags"
+        style="@style/CustomSmallButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/white_background"
+        android:text="@string/new_tag"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/add_note"
+        app:layout_constraintEnd_toStartOf="@+id/add_note"
+        app:layout_constraintTop_toTopOf="@+id/add_note" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tags"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tag_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tag_title"
+        style="@style/CustomTextViewMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/tags"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tags"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tags"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/tag_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tag_title,tags" />
+</androidx.constraintlayout.widget.ConstraintLayout>

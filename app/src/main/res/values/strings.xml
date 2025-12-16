@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Notelab</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="add_note">Add Note</string>
+    <string name="note_description">Note description</string>
+    <string name="new_tag">New Tag</string>
+    <string name="note_title">Note\'s Title</string>
+    <string name="add_image_url">Add image url</string>
+    <string name="image_url">image</string>
+    <string name="tags">Tags</string>
+    <string name="created_at">created at %s</string>
+    <string name="edited_at">edited at %s</string>
+    <string name="no_notes_available">No notes are available.\nStart by creating a new note</string>
+    <string name="tag_name">Tag name</string>
+    <string name="add_tag">Add Tag</string>
+    <string name="on_boarding_title">Welcome to Notelab where you can keep track of your notes</string>
+    <string name="start">Start</string>
+    <string name="note_title_cannot_be_empty">Note Title cannot be empty</string>
+    <string name="note_description_cannot_be_empty">Note Description cannot be empty</string>
+    <string name="note_added_successfully">Note added successfully</string>
+    <string name="note_edit_successfully">Note edited successfully</string>
+    <string name="delete_note_title">Welcome to Notelab</string>
+    <string name="delete_note_description">Just swipe horizontally to delete this note</string>
+    <string name="photo_note_title">Photos Photos! Juhuu</string>
+    <string name="photo_note_description">You can add photos to your notes</string>
+    <string name="add_note_shortcut">Add note</string>
+    <string name="add_note_shortcut_disable">Add note disabled</string>
+    <string name="open_notes_shortcut">Open notes</string>
+    <string name="open_notes_shortcut_disable">Open note disabled</string>
+</resources>
