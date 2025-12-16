@@ -1,0 +1,27 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="addnote"
+        android:enabled="true"
+        android:icon="@drawable/ic_add"
+        android:shortcutShortLabel="@string/add_note_shortcut"
+        android:shortcutLongLabel="@string/add_note_shortcut"
+        android:shortcutDisabledMessage="@string/add_note_shortcut_disable">
+        <intent
+            android:action="com.task.noteapp.ADD_NOTE_SHORTCUT"
+            android:targetPackage="com.task.noteapp"
+            android:targetClass="com.task.noteapp.MainActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="noteslist"
+        android:enabled="true"
+        android:icon="@drawable/ic_notes"
+        android:shortcutShortLabel="@string/open_notes_shortcut"
+        android:shortcutLongLabel="@string/open_notes_shortcut"
+        android:shortcutDisabledMessage="@string/open_notes_shortcut_disable">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.task.noteapp"
+            android:targetClass="com.task.noteapp.MainActivity" />
+    </shortcut>
+    <!-- Specify more shortcuts here. -->
+</shortcuts>
